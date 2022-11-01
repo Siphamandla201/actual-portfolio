@@ -1,45 +1,78 @@
-
 *,
-*::after, ::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+* ::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
-body{
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    color: rgb(203, 181, 223);
+body {
+  background-color:black;
+  color: rgb(203, 181, 223);
+  /* height: 100vh; */
 }
+
+section {
+  background-color: black;
+  height: 100vh;
+}
+
 .navbar {
-    width: 100%;
-    
+  height: 30%;
+  width: 100%;
 }
-.navbar-brand img{
-    width: 5rem;
+.navbar-brand img {
+  width: 8rem;
 }
-.navbar-toggler{
-    background-color:rgb(203, 181, 223);
+.navbar-toggler {
+  background-color: rgb(203, 181, 223);
 }
-.section{
-    height: 100%;
-    width: 100%;
+.section {
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
 }
-.section{ 
-    text-align: center;
-    position: absolute;
-    margin-top:8%;
-    margin-left: 5%;
+.icons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.icons{
-display:flex;
-flex-direction: column;
-margin-top: 30%;
+.about {
+  height: 100vh;
+  color: black;
+  background-color: rgb(109, 226, 226);
 }
-.background .image{
-    width: 20%;
+.heading {
+  /* margin-top: 80%; */
+  text-align: center;
 }
-.background img{
- width: 20rem;
+.about-item {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  width: 80%;
+}
+.about img {
+  width: 20rem;
+  margin-right: 1%;
+  border-radius: 10%;
+}
+.about-text {
+  text-align: center;
+  /* width: ; */
+}
+.about-item .about-text img {
+  width: 40%;
+}
+.education {
+  background-color: black;
+  height: 100vh;
+}
+.row {
+  padding: 35px;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  gap: 20px;
+}
+.row .item {
+  border: 3px solid white;
 }
